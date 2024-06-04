@@ -1,0 +1,303 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece el cuerpo al 100% de la altura de la ventana visible */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+main {
+    padding: 2em;
+    flex: 1; /* El contenido principal ocupa todo el espacio disponible */
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 2em; /* Espacio entre el título y los productos */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    padding: 20px 0; /* Agrega espaciado vertical alrededor del menú */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para el menú */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.about-us {
+    background: #fff;
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2em auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+
+
+.wrapper {
+    flex: 1; /* El contenido principal ocupa todo el espacio disponible */
+}
+
+
+.hero {
+    background: url('../images/index4.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5em 0;
+    text-align: center;
+}
+
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+.category {
+    background: white;
+    padding: 1em;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    argin-bottom: 20px;
+}
+
+/*.category-img {
+    width: 200px; /* Ajusta este valor según tus necesidades */
+    /*height: auto; /* Mantiene la proporción de la imagen */
+    /*display: block; /* Asegura que la imagen no tenga elementos en línea a su lado */
+    /*margin: 0 auto; /* Centra la imagen dentro del div */
+    /*border-radius: 5px; /* Hace las esquinas redondeadas */
+/*}*/
+
+.category-img {
+    width: 100%; /* Full width inside category */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+
+.about-content {
+    max-width: 800px; /* Ajusta este valor según tu diseño */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    padding: 0 20px; /* Añade espacio alrededor del texto */
+}
+
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Estilos para la Sección de Contacto */
+.contact {
+    padding: 2em;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    width: 50px; /* Ancho deseado */
+    height: 50px; /* Alto deseado */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor sin distorsionar */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.whatsapp {
+    margin-bottom: 20px;
+}
+
+.whatsapp p {
+    margin-bottom: 10px;
+}
+
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.map {
+    width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+    max-width: 600px; /* Puedes ajustar este valor según tu diseño */
+    height: 400px; /* Ajusta la altura según tu diseño */
+    margin: 20px auto; /* Centra el mapa horizontalmente y añade espacio superior */
+}
+
+
+.spacer {
+    height: 20px; /* Ajusta la altura del espacio */
+}
+
+
+.product-list {
+    display: flex; /* Utiliza flexbox para alinear los elementos en una fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva fila si no caben en el ancho disponible */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme a lo largo del contenedor */
+    margin-top: 20px; /* Agrega un margen superior a la sección */
+}
+
+.product-list h2 {
+    margin-bottom: 20px; /* Agrega un margen inferior al título */
+}
+
+.product-item {
+    width: calc(33.33% - 20px); /* Establece el ancho de cada elemento para que quepan varios elementos en una fila */
+    margin-bottom: 20px; /* Agrega un espacio inferior entre los elementos */
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Añade una transición suave al hacer hover sobre la imagen */
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.1); /* Escala la imagen al hacer hover */
+}
+
+.product-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item:hover .product-details {
+    opacity: 1;
+}
+
+.product-image:hover .product-details {
+    opacity: 1;
+}
+
+.product-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.product-details p {
+    margin: 1em 0;
+}
+
+@media (max-width: 768px) {
+    .category {
+        width: 45%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+
+
+
+
+
